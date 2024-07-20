@@ -6,5 +6,7 @@ xhr.send();
 xhr.addEventListener( "load", loadSelectedData );
 
 function loadSelectedData( e ) {
-	console.log( e.target.responseText );
+	console.log(JSON.parse( e.target.responseText) );
 }
+
+let elementoPorID = document.getElementById('holder');
